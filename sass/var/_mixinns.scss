@@ -1,3 +1,10 @@
+@mixin text-style( $fw:500, $fs:14px, $lh:1.14, $ls:0.02em, $col:#212121){
+font-weight:$fw;
+font-size:$fs;
+line-height:$lh;
+letter-spacing:$ls;
+color:$col;
+}
 @mixin mobile {
   @media screen and (min-width: 320px) {
     @content;
