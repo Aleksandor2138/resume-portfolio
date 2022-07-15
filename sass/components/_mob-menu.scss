@@ -1,7 +1,11 @@
 .mobile {
+    @include desktop {
+        display: none;
+    }
     &-open-btn {
         background: #ffffff;
         border: none;
+        transition: var(--main-transition);
         &:hover,
         &:focus {
             fill: var(--hover-color);
@@ -21,6 +25,7 @@
         padding: 48px 0px;
         overflow: auto;
         border: 1px solid #ececec;
+        transition: var(--main-transition);
         .container {
             display: flex;
             flex-direction: column;
@@ -56,6 +61,7 @@
             
         // }
         &__item {
+            transition: var(--main-transition);
             &:hover,
             &:focus {
                 color: var(--hover-color);
@@ -66,6 +72,7 @@
         }
         &__link {
             @include text-style ($fs:40px, $lh:1.175 );
+            transition: var(--main-transition);
             &:hover,
             &:focus {
                 color: var(--hover-color);
@@ -85,6 +92,7 @@
     }
     &-contact__link {
         @include text-style ($fs:24px, $lh:1.165, $col:var(--text-color-dark-grey) ); 
+        transition: var(--main-transition);
         &:hover,
         &:focus {
             color: var(--hover-color);
@@ -113,6 +121,7 @@
         @include desktop { 
             @include text-style ($fs:18px, $lh:1.22, $col:var(--hover-color))
         }
+        
     }
 }
 .no-scroll{

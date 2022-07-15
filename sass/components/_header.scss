@@ -8,11 +8,11 @@
     align-items: center;
     justify-content: space-between;
     @media screen and (min-width: 768px){
-        padding-top: 21px;
-        padding-bottom: 21px;}
+        padding-top: 15px;
+        padding-bottom: 15px;}
     @media screen and (min-width: 1200px){
-        padding-top: 24px;
-        padding-bottom: 25px;}
+        padding-top: 20px;
+        padding-bottom: 20px;}
     }
 }
 .me {
@@ -42,21 +42,20 @@
 
     &__link {
         font-family: 'Marck Script', cursive;
-        @include text-style($fs:16px, $col: var(--text-color-grey));
+        font-style:italic ;
+        @include text-style($fs:16px, $col: #2195f3);
+        transition: var(--main-transition);
         &:hover,
         &:focus{
-            color: var(--hover-color);
+            color: #2195f383;
         }
         @include mobile {
-            @include text-style ($fs:24px, $col: var(--text-color-grey) );
+            @include text-style ($fs:24px, $col: #2195f3);
         }
     }
 }
 
 .nav {
-    transition-property: color;
-    transition-duration: 500ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     display: none;
     @include desktop{
         display: block;
@@ -71,6 +70,7 @@
     }
 
     &__item {
+        position: relative;
         &:not(:last-child) {
             margin-right: 50px;
         }
@@ -78,6 +78,7 @@
 
 		&__link {
             @include text-style();
+            transition: var(--main-transition);
 		}
 }
 
@@ -107,6 +108,7 @@
             @include text-style($fs:16px, $col: var(--text-color-grey));
             display: flex;
             align-items: center;
+            transition: var(--main-transition);
             &:hover,
             &:focus {
                 color: var(--hover-color);

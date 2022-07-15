@@ -1,0 +1,90 @@
+.footer {
+    background: var(--section-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    width: 100%;
+    .container {
+        @include tablet {
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+        @include desktop{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    &-me {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include tablet {
+            display: block;
+        }
+        &__p {
+            @include text-style($col: var(--text-color-white));
+            margin-bottom: 10px;
+        }
+        &__link {
+            font-family: "Marck Script", cursive;
+            @include text-style($fs: 22px, $col:#2195f3);
+            transition: var(--main-transition);
+            &:hover,
+            &:focus {
+                color: #2195f383;
+            }
+            @include mobile {
+                @include text-style($fs: 24px,$col:#2195f3);
+            }
+        }
+    }
+
+    &-contact {
+        @include tablet {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        &-list {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            :hover,
+            :focus {
+                color: var(--hover-color);
+            }
+            @include tablet {
+                display: block;
+            }
+        }
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+        &__link {
+            @include text-style($fw: 400, $lh: 1.71,$ls: 0.03em, $col: var(--text-color-white-transparent));
+            font-style: normal;
+            transition: var(--main-transition);
+            &--color {
+                color: var(--text-color-white);
+            }
+        }
+    }
+    &-soc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    @include desktop {
+        margin: 0;
+    }
+        &-text {
+            @include text-style($fw: 700, $ls: 0.03em, $col: var(--text-color-white));
+            text-transform: uppercase;
+            margin: 0 auto 20px auto;
+        }
+    }
+}
