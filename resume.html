@@ -29,7 +29,7 @@
         <nav class="nav">
             <ul class="nav-list list">
                 <li class="nav__item"><a href="" class="nav__link link">Обо мне</a></li>
-                <li class="nav__item"><a href="" class="nav__link link">Портфолио</a></li>
+                <li class="nav__item"><a href="./portfolio.html" class="nav__link link">Портфолио</a></li>
                 <li class="nav__item"><a href="#footer" class="nav__link link">Контакты</a></li>
             </ul>
         </nav>
@@ -40,16 +40,54 @@
                     <use href="./img/icons.svg#icon-envelope"></use></svg>Aleksandor2138@gmail.com
                 </a>
             </li>
-            <li class="contact__item"></li>
+            <li class="contact__item">
                 <a href="tel:+380664412196" class="contact__link link">
                     <svg class="contact__icon" width="15" height="24">
-                    <use href="./img/icons.svg#icon-smartphone"></use></svg>+38 066 441 21 96
+                    <use href="./img/icons.svg#icon-smartphone"></use></svg><span class="contact__span">_</span>+38 066 441 21 96
                 </a>
             </li>
-        </ul> 
+        </ul>
+        <section class="mobile">
+            <button class="mobile-open-btn" type="button">
+                <svg class="mobile-open-icon" width="40" height="40">
+                <use href="./img/icons.svg#icon-menu"></use></svg>
+            </button>
+            <div class="mobile-menu is-hidden">
+                <div class="container">
+                    <button class="mobile-close-btn" type="button">
+                    <svg class="mobile-close-icon" width="40" height="40">
+                    <use href="./img/icons.svg#icon-close_40px"></use></svg>
+                    </button>
+                    <nav class="mobile-nav">
+                        <ul class="mobile-nav__list list">
+                            <li class="mobile-nav__item"><a href="" class="mobile-nav__link mobile-nav__link--color link">Обо мне</a></li>
+                            <li class="mobile-nav__item"><a href="" class="mobile-nav__link link">Портфолио</a></li>
+                            <li class="mobile-nav__item"><a href="#footer" class="mobile-nav__link link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="mobile-bottom">
+                        <ul class="mobile-contact-list list">
+                            <li class="mobile-contact__item">
+                                <a href="mailto:Aleksandor2138@gmail.com" class="mobile-contact__link mobile-contact__link--color link">Aleksandor2138@gmail.com</a>
+                            </li>
+                            <li class="mobile-contact__item">
+                                <a href="tel:+380664412196" class="mobile-contact__link link">+38 066 441 21 96</a>
+                            </li>
+                        </ul>
+                        <ul class="mobile-soc-list list">
+                            <li class="mobile-soc__item"><a href="" class="mobile-soc__link link">Instagram</a></li>
+                            <li class="mobile-soc__item"><a href="" class="mobile-soc__link link">WhatsApp</a></li>
+                            <li class="mobile-soc__item"><a href="" class="mobile-soc__link link">Viber</a></li>
+                            <li class="mobile-soc__item"><a href="" class="mobile-soc__link link">Telegram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </header>
 <main class="main"></main>
 <footer class="footer" id="footer"></footer>
+<script src="./js/menu-mobile.js"></script>
 </body>
 </html>

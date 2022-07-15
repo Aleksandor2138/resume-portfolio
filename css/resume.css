@@ -3,8 +3,8 @@ html {
 }
 
 body {
-  font-family: "Marck Script", cursive, "Roboto", sans-serif;
-  font-style: Regular;
+  font-family: "Roboto", sans-serif, "Marck Script", cursive;
+  font-style: normal;
   color: #333333;
 }
 
@@ -46,11 +46,12 @@ button {
   --section-color-mobmenu: #e17992;
   --light-color: #ffffff;
   --accent-color: #d41443;
-  --hover-btn-dark: #c7133e;
+  --hover-color: #2196f3;
   --hover-btn-light: #ecebeb;
   --main-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  --text-color-dark-first: #000000;
-  --text-color-dark-second: #907e82;
+  --text-color-dark: #212121;
+  --text-color-grey: #907e82;
+  --text-color-dark-grey: #757575;
 }
 
 .visually-hidden {
@@ -87,6 +88,8 @@ button {
 }
 
 .header {
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ececec;
 }
 .header .container {
@@ -108,21 +111,81 @@ button {
   }
 }
 
-.me {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .me {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .me {
+    display: block;
+  }
 }
 .me__p {
-  margin-right: 30px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+  text-align: center;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 320px) {
+  .me__p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
+}
+@media screen and (min-width: 768px) {
+  .me__p {
+    text-align: left;
+    margin: 0 30px 0 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .me__p {
+    text-align: center;
+    margin: 0 0 10px 0;
+  }
+}
+.me__link {
+  font-family: "Marck Script", cursive;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color-grey);
+}
+.me__link:hover, .me__link:focus {
+  color: var(--hover-color);
+}
+@media screen and (min-width: 320px) {
+  .me__link {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color-grey);
+  }
 }
 
 .nav {
   transition-property: color;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .nav {
+    display: block;
+  }
 }
 .nav :hover, .nav :focus {
-  color: #2196f3;
+  color: var(--hover-color);
 }
 .nav-list {
   display: flex;
@@ -145,22 +208,176 @@ button {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-list {
-  display: flex;
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .contact-list {
+    display: block;
+  }
 }
 .contact-list :hover, .contact-list :focus {
-  color: #2196f3;
+  color: var(--hover-color);
 }
-.contact__item {
-  margin-right: 30px;
+.contact__item:nth-child(1) {
+  margin-bottom: 10px;
 }
 .contact__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color-grey);
   display: flex;
   align-items: center;
 }
 .contact__link:hover, .contact__link:focus {
-  color: #2196f3;
-  fill: #2196f3;
+  color: var(--hover-color);
+  fill: var(--hover-color);
 }
 .contact__icon {
   margin-right: 10px;
+}
+.contact__span {
+  color: #ffffff;
+}
+
+.mobile-open-btn {
+  background: #ffffff;
+  border: none;
+}
+.mobile-open-btn:hover, .mobile-open-btn:focus {
+  fill: var(--hover-color);
+}
+@media screen and (min-width: 1280px) {
+  .mobile-open-btn {
+    display: none;
+  }
+}
+.mobile-menu {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  padding: 48px 0px;
+  overflow: auto;
+  border: 1px solid #ececec;
+}
+.mobile-menu .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  align-items: flex-start;
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+.mobile-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: #ffffff;
+  border: none;
+}
+.mobile-close-btn:hover, .mobile-close-btn:focus {
+  fill: var(--hover-color);
+}
+.mobile-nav__item:hover, .mobile-nav__item:focus {
+  color: var(--hover-color);
+}
+.mobile-nav__item:not(last-child) {
+  margin-bottom: 32px;
+}
+.mobile-nav__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.mobile-nav__link:hover, .mobile-nav__link:focus {
+  color: var(--hover-color);
+}
+.mobile-nav__link--color {
+  color: var(--hover-color);
+}
+.mobile-contact-list {
+  margin-bottom: 64px;
+}
+.mobile-contact__item:not(last-child) {
+  margin-bottom: 32px;
+}
+.mobile-contact__link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.165;
+  letter-spacing: 0.02em;
+  color: var(--text-color-dark-grey);
+}
+.mobile-contact__link:hover, .mobile-contact__link:focus {
+  color: var(--hover-color);
+}
+.mobile-contact__link--color {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  color: var(--hover-color);
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 1280px) {
+  .mobile-contact__link--color {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.175;
+    letter-spacing: 0.02em;
+    color: var(--hover-color);
+  }
+}
+.mobile-soc-list {
+  display: flex;
+}
+.mobile-soc__item {
+  padding-right: 10px;
+  margin-left: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.mobile-soc__item:nth-child(4) {
+  border: none;
+}
+.mobile-soc__link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--hover-color);
+}
+@media screen and (min-width: 1280px) {
+  .mobile-soc__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: var(--hover-color);
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }/*# sourceMappingURL=resume.css.map */

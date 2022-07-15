@@ -1,0 +1,125 @@
+.mobile {
+    &-open-btn {
+        background: #ffffff;
+        border: none;
+        &:hover,
+        &:focus {
+            fill: var(--hover-color);
+        }
+        @include desktop {
+            display: none;
+        }
+    }    
+    &-menu{
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #ffffff;
+        width: 100%;
+        height: 100%;
+        padding: 48px 0px;
+        overflow: auto;
+        border: 1px solid #ececec;
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            align-items: flex-start;
+        }
+        @include tablet{
+            width: 50%;
+        }
+        @include desktop{
+            display: none;
+        }
+    }
+    // &-open-icon {
+    // }
+    &-close-btn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        background: #ffffff;
+        border: none;
+        &:hover,
+        &:focus {
+            fill: var(--hover-color);
+        }
+    }
+    // &-close-icon {
+    // }
+    &-nav {
+    
+        // &__list {
+            
+        // }
+        &__item {
+            &:hover,
+            &:focus {
+                color: var(--hover-color);
+            }
+            &:not(last-child){
+                margin-bottom: 32px;
+            }
+        }
+        &__link {
+            @include text-style ($fs:40px, $lh:1.175 );
+            &:hover,
+            &:focus {
+                color: var(--hover-color);
+            }
+            &--color {
+                color: var(--hover-color);
+            }
+        }
+    }
+    &-contact-list {
+        margin-bottom: 64px;
+    }
+    &-contact__item {
+        &:not(last-child){
+            margin-bottom: 32px;
+        }
+    }
+    &-contact__link {
+        @include text-style ($fs:24px, $lh:1.165, $col:var(--text-color-dark-grey) ); 
+        &:hover,
+        &:focus {
+            color: var(--hover-color);
+        }
+        &--color{
+            @include text-style ($fs:20px, $lh:1.175, $col:var(--hover-color) );
+            margin-bottom: 32px;
+            @include desktop {
+                @include text-style ($fs:34px, $lh:1.175, $col:var(--hover-color) );
+            }
+        }
+    }
+    &-soc-list {
+        display: flex;
+    }
+    &-soc__item {
+            padding-right: 10px;
+            margin-left: 10px;
+            border-right:1px  solid rgba(33, 33, 33, 0.2);
+        &:nth-child(4) {
+            border: none;
+        }
+    }
+    &-soc__link {
+        @include text-style ($fs:12px, $lh:1.22, $col:var(--hover-color) );
+        @include desktop { 
+            @include text-style ($fs:18px, $lh:1.22, $col:var(--hover-color))
+        }
+    }
+}
+.no-scroll{
+    overflow: hidden;
+}
+.is-hidden {
+opacity: 0;
+pointer-events: none;
+visibility: hidden;
+}
