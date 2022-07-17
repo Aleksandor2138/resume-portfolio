@@ -16,8 +16,16 @@
   align-items: center;
   fill: var(--text-color-white);
   transition: var(--main-transition);
-  &:hover,
-  &:focus {
-  background-color: var(--hover-color);
+//   &:hover,
+//   &:focus + .soc__img {
+//   background-color: var(--hover-color);
+// }
 }
+.soc__img{
+  transform: scale(0.7);
+  transition: var(--main-transition);
+  .soc__link:focus &,
+  .soc__link:hover & {
+    transform: scale(1.1);
+  }
 }
