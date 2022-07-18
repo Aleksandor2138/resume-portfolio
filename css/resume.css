@@ -482,23 +482,23 @@ button {
   animation: anim_slides 20s linear infinite 0s;
 }
 .hero-slaides li:nth-child(1) {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/mobile/heroFonMob-1.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/mobile/heroFonMob-1.jpg);
 }
 .hero-slaides li:nth-child(2) {
   animation-delay: 4s;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/mobile/heroFonMob-2.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/mobile/heroFonMob-2.jpg);
 }
 .hero-slaides li:nth-child(3) {
   animation-delay: 8s;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/mobile/heroFonMob-3.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/mobile/heroFonMob-3.jpg);
 }
 .hero-slaides li:nth-child(4) {
   animation-delay: 12s;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/mobile/heroFonMob-4.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/mobile/heroFonMob-4.jpg);
 }
 .hero-slaides li:nth-child(5) {
   animation-delay: 16s;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/mobile/heroFonMob-5.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/mobile/heroFonMob-5.jpg);
 }
 .hero-slaides p {
   font-weight: 900;
@@ -511,23 +511,23 @@ button {
 }
 @media screen and (min-width: 768px) {
   .hero-slaides li:nth-child(1) {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/tablet/heroFonTab-1.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/tablet/heroFonTab-1.jpg);
   }
   .hero-slaides li:nth-child(2) {
     animation-delay: 4s;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/tablet/heroFonTab-2.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/tablet/heroFonTab-2.jpg);
   }
   .hero-slaides li:nth-child(3) {
     animation-delay: 8s;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/tablet/heroFonTab-3.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/tablet/heroFonTab-3.jpg);
   }
   .hero-slaides li:nth-child(4) {
     animation-delay: 12s;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/tablet/heroFonTab-4.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/tablet/heroFonTab-4.jpg);
   }
   .hero-slaides li:nth-child(5) {
     animation-delay: 16s;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/tablet/heroFonTab-5.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/tablet/heroFonTab-5.jpg);
   }
   .hero-slaides p {
     font-weight: 900;
@@ -539,23 +539,23 @@ button {
 }
 @media screen and (min-width: 1280px) {
   .hero-slaides li:nth-child(1) {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/desctop/heroFonDesc-1.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/desctop/heroFonDesc-1.jpg);
   }
   .hero-slaides li:nth-child(2) {
     animation-delay: 4s;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/desctop/heroFonDesc-2.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/desctop/heroFonDesc-2.jpg);
   }
   .hero-slaides li:nth-child(3) {
     animation-delay: 8s;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/desctop/heroFonDesc-3.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/desctop/heroFonDesc-3.jpg);
   }
   .hero-slaides li:nth-child(4) {
     animation-delay: 12s;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/desctop/heroFonDesc-4.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/desctop/heroFonDesc-4.jpg);
   }
   .hero-slaides li:nth-child(5) {
     animation-delay: 16s;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/desctop/heroFonDesc-5.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/desctop/heroFonDesc-5.jpg);
   }
   .hero-slaides p {
     font-weight: 900;
