@@ -45,7 +45,6 @@ button {
   --section-color-botom: #fff5f6;
   --section-color-mobmenu: #e17992;
   --light-color: #ffffff;
-  --accent-color: #d41443;
   --hover-btn-light: #ecebeb;
   --text-color-white: #ffffff;
   --text-color-white-transparent: #ffffff99;
@@ -53,6 +52,8 @@ button {
   --text-color-grey: #907e82;
   --text-color-dark-grey: #757575;
   --section-color: #2f303a;
+  --section-color-dark:#1e2939;
+  --section-color-white-grey: #f5f4fa;
   --hover-color: #2196f3;
   --main-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -172,6 +173,15 @@ button {
   .me__link {
     font-weight: 500;
     font-size: 24px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #2195f3;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .me__link {
+    font-weight: 500;
+    font-size: 28px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #2195f3;
@@ -573,6 +583,121 @@ button {
     opacity: 0;
   }
 }
+.about {
+  padding: 15px 0;
+  background: var(--section-color-white-grey);
+}
+.about__img {
+  margin: 10px auto 20px auto;
+  max-width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+@media screen and (min-width: 768px) {
+  .about__img {
+    float: left;
+    shape-outside: circle(50%);
+    margin: 0 10px 10px 0;
+    transform: scale(0.95);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about__right {
+    display: flex;
+    align-items: center;
+  }
+}
+.about__p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+  margin-bottom: 8px;
+  text-align: center;
+}
+@media screen and (min-width: 320px) {
+  .about__p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__p {
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about__p {
+    text-align: start;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
+}
+.about__mi {
+  font-family: "Marck Script", cursive;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #2195f3;
+  margin-bottom: 12px;
+  text-align: center;
+}
+@media screen and (min-width: 320px) {
+  .about__mi {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #2195f3;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__mi {
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #2195f3;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about__mi {
+    text-align: start;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #2195f3;
+  }
+}
+.about__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--text-color-grey);
+  text-align: justify;
+}
+@media screen and (min-width: 1280px) {
+  .about__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: var(--text-color-grey);
+  }
+}
+
 .footer {
   background: var(--section-color);
   padding-top: 60px;

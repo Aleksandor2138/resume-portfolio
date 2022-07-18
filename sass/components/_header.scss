@@ -52,6 +52,9 @@
         @include mobile {
             @include text-style ($fs:24px, $col: #2195f3);
         }
+        @include desktop {
+            @include text-style ($fs:28px, $col: #2195f3);
+        }
     }
 }
 
