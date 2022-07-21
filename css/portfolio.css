@@ -554,10 +554,12 @@ button {
 
 .footer {
   background: var(--section-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
   margin: 0 auto;
   width: 100%;
+}
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer .container {
@@ -667,4 +669,36 @@ button {
   color: var(--text-color-white);
   text-transform: uppercase;
   margin: 0 auto 20px auto;
+}
+
+.copyright {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color-white);
+  font-style: normal;
+  height: 40px;
+  border-top: 1px solid var(--text-color-white-transparent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 320px) {
+  .copyright {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-color-white);
+  }
+}
+@media screen and (min-width: 768px) {
+  .copyright {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-color-white);
+  }
 }/*# sourceMappingURL=portfolio.css.map */

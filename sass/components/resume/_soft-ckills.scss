@@ -1,0 +1,56 @@
+.soft-ckills {
+    background: var(--section-color-white-grey);
+    padding: 60px 0;
+    @include desktop{
+        padding: 80px 0;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include tablet {
+            align-items: unset;
+            padding: 0 16px;
+        }
+    }
+    &__header {
+        @include text-style(700, 22px, 1.17, 0.03em);
+        margin-bottom: 30px;
+        text-align: center;
+        @include desktop {
+            @include text-style(700, 30px, 1.17, 0.03em);
+            // text-align: center;
+            margin-bottom: 50px;
+        }
+    }
+    &__bottom {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        @include tablet {
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+        }
+    }
+    // &__list {
+    // }
+    &__item {
+        // border: 1px solid red;
+        @include text-style($fs:12px, $col: var(--text-color-grey));
+        &:before{
+            content: '★';
+            margin-right: 1px;
+            color: #ffd900be;
+        }
+        @include mobile {
+            // margin-left: 30px;
+            @include text-style($fs:16px, $col: var(--text-color-grey));
+        }
+        @include tablet {
+        }
+        @include desktop{
+        }
+    }
+}
+

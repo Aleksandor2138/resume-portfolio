@@ -1,0 +1,67 @@
+.hard-skills {
+    padding: 60px 0;
+    @include desktop{
+        padding: 80px 0;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include tablet {
+            align-items: unset;
+            padding: 0 16px;
+        }
+    }
+    &-header {
+        @include text-style(700, 22px, 1.17, 0.03em);
+        margin-bottom: 30px;
+        text-align: center;
+        @include desktop {
+            @include text-style(700, 30px, 1.17, 0.03em);
+            text-align: center;
+            letter-spacing: 0.03em;
+            margin-bottom: 50px;
+        }
+    }
+    &-all{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        // align-content: stretch;
+        @include tablet {
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+        }
+    }
+	&__list {
+        margin-bottom: 10px;
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    &__text {
+        @include text-style($fs:12px, $col: var(--text-color-grey));
+        @include mobile {
+            @include text-style($fs:16px, $col: var(--text-color-grey));
+        }
+    }
+}
+.rating {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    & li{
+        font-size: 10px;
+        line-height: 1;
+        color: var(--text-color-grey);
+        @include mobile {
+            font-size: 14px; 
+        }
+    }
+    & .active {
+        color: #ffd900be;
+    }
+}

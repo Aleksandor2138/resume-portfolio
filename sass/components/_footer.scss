@@ -1,10 +1,11 @@
 .footer {
     background: var(--section-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
+    
     margin: 0 auto;
     width: 100%;
     .container {
+        padding-top: 60px;
+        padding-bottom: 60px;
         @include tablet {
             padding-left: 80px;
             padding-right: 80px;
@@ -86,5 +87,20 @@
             text-transform: uppercase;
             margin: 0 auto 20px auto;
         }
+    }
+}
+.copyright{
+    @include text-style($fw: 400, $fs:10px, $lh: 1.71,$ls: 0.03em, $col: var(--text-color-white));
+    font-style: normal;
+    height: 40px;
+    border-top:1px solid var(--text-color-white-transparent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mobile {
+        @include text-style($fw: 400, $fs:13px, $lh: 1.71,$ls: 0.03em, $col: var(--text-color-white));
+    }
+    @include tablet{
+        @include text-style($fw: 400, $lh: 1.71,$ls: 0.03em, $col: var(--text-color-white));
     }
 }
