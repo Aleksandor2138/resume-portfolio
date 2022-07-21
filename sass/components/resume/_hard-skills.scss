@@ -1,8 +1,5 @@
 .hard-skills {
     padding: 60px 0;
-    @include desktop{
-        padding: 80px 0;
-    }
     .container {
         display: flex;
         flex-direction: column;

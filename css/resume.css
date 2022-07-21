@@ -590,11 +590,6 @@ button {
   padding: 60px 0;
   background: var(--section-color-white-grey);
 }
-@media screen and (min-width: 1280px) {
-  .about {
-    padding: 80px 0;
-  }
-}
 .about__img {
   margin: 10px auto 20px auto;
   max-width: 100%;
@@ -709,11 +704,6 @@ button {
 .hard-skills {
   padding: 60px 0;
 }
-@media screen and (min-width: 1280px) {
-  .hard-skills {
-    padding: 80px 0;
-  }
-}
 .hard-skills .container {
   display: flex;
   flex-direction: column;
@@ -806,11 +796,6 @@ button {
   background: var(--section-color-white-grey);
   padding: 60px 0;
 }
-@media screen and (min-width: 1280px) {
-  .soft-ckills {
-    padding: 80px 0;
-  }
-}
 .soft-ckills .container {
   display: flex;
   flex-direction: column;
@@ -874,6 +859,206 @@ button {
     color: var(--text-color-grey);
   }
 }
+
+.work {
+  padding: 60px 0;
+  margin: 0 auto;
+}
+.work .container {
+  display: table;
+  margin: 0 auto;
+}
+.work-header {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 30px;
+  text-align: center;
+}
+@media screen and (min-width: 1280px) {
+  .work-header {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
+  }
+}
+.work-company {
+  text-align: left;
+}
+.work__position {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+  margin-bottom: 10px;
+}
+.work__position span {
+  color: var(--hover-color);
+}
+@media screen and (min-width: 320px) {
+  .work__position {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
+}
+.work__period {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color-grey);
+}
+@media screen and (min-width: 320px) {
+  .work__period {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color-grey);
+  }
+}
+.work__period span {
+  color: var(--text-color-dark);
+}
+.work__list {
+  margin-bottom: 15px;
+}
+.work__item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color-dark);
+}
+@media screen and (min-width: 320px) {
+  .work__item {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color-dark);
+  }
+}
+
+.details {
+  text-align: center;
+  margin: 0 auto;
+}
+.details__more {
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.education {
+  padding: 60px 0;
+  background: var(--section-color-white-grey);
+  margin: 0 auto;
+}
+.education .container {
+  margin: 0 auto;
+}
+.education-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 30px;
+  text-align: center;
+}
+@media screen and (min-width: 1280px) {
+  .education-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
+  }
+}
+.education-list {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1280px) {
+  .education-list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.education__university {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--hover-color);
+  margin-bottom: 10px;
+}
+.education__speciality {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 320px) {
+  .education__speciality {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
+}
+.education__period {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color-grey);
+}
+.education__period span {
+  color: var(--text-color-dark);
+}
+
+.go {
+  background: #373740;
+  color: var(--text-color-white);
+  position: relative;
+  margin-right: 8px;
+}
+.go::after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  bottom: 0;
+  border: 10px solid transparent;
+  border: 10px solid transparent;
+  border-left: 7px solid #373740;
+}
+
+.it {
+  background: #F2600C;
+  color: var(--text-color-white);
+  padding: 0 8px 0 8px;
+}
+
+.vs {
+  color: #373740;
+}
+
 .footer {
   background: var(--section-color);
   margin: 0 auto;

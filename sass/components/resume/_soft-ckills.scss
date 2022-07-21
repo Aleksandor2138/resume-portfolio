@@ -1,9 +1,6 @@
 .soft-ckills {
     background: var(--section-color-white-grey);
     padding: 60px 0;
-    @include desktop{
-        padding: 80px 0;
-    }
     .container {
         display: flex;
         flex-direction: column;
@@ -19,7 +16,6 @@
         text-align: center;
         @include desktop {
             @include text-style(700, 30px, 1.17, 0.03em);
-            // text-align: center;
             margin-bottom: 50px;
         }
     }
@@ -36,7 +32,6 @@
     // &__list {
     // }
     &__item {
-        // border: 1px solid red;
         @include text-style($fs:12px, $col: var(--text-color-grey));
         &:before{
             content: '★';
@@ -44,12 +39,7 @@
             color: #ffd900be;
         }
         @include mobile {
-            // margin-left: 30px;
             @include text-style($fs:16px, $col: var(--text-color-grey));
-        }
-        @include tablet {
-        }
-        @include desktop{
         }
     }
 }

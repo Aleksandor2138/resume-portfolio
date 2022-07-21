@@ -1,0 +1,57 @@
+.work {
+    padding: 60px 0;
+    margin: 0 auto;
+    .container {
+        display: table;
+        margin: 0 auto;
+    }
+    &-header {
+        @include text-style(700, 22px, 1.17, 0.03em);
+        margin-bottom: 30px;
+        text-align: center;
+        @include desktop {
+            @include text-style(700, 30px, 1.17, 0.03em);
+            margin-bottom: 50px;
+        }
+    }
+    &-company {
+        text-align: left;
+    }
+    &__position {
+        @include text-style($fs:16px);
+        margin-bottom: 10px;
+        & span {
+            color: var(--hover-color);
+        }
+        @include mobile {
+            @include text-style($fs:18px);
+        }
+    }
+    &__period {
+        margin-bottom: 10px;
+        @include text-style($fs:12px, $col: var(--text-color-grey));
+        @include mobile {
+            @include text-style($fs:14px, $col: var(--text-color-grey));
+        }
+        & span {
+            color: var(--text-color-dark);
+        }
+    }
+    &__list {
+        margin-bottom: 15px;
+    }
+    &__item {
+        @include text-style($fs:14px, $col: var(--text-color-dark));
+        @include mobile {
+            @include text-style($fs:16px, $col: var(--text-color-dark));
+        }
+    }
+}
+.details {
+    text-align: center;
+    margin: 0 auto;
+    &__more {
+        text-align: left;
+        margin-bottom: 5px;
+    }
+}
