@@ -53,7 +53,7 @@
                 <use href="./img/icons.svg#icon-menu"></use></svg>
             </button>
             <div class="mobile-menu is-hidden">
-                <div class="container">
+                <div class="container mobile-close">
                     <button class="mobile-close-btn" type="button">
                     <svg class="mobile-close-icon" width="40" height="40">
                     <use href="./img/icons.svg#icon-close_40px"></use></svg>
@@ -84,6 +84,11 @@
                 </div>
             </div>
         </section>
+        <button class="top-btn" onclick="topFunction()"  id="myBtn" title="Go to top">
+            <svg class="top__svg">
+                <use href="./img/icons.svg#icon-topUp"></use>
+            </svg>
+        </button>
     </div>
 </header>
 <main class="main">
@@ -294,7 +299,7 @@
             <div class="work-company">
                 <h3 class="work__position">Front-End Разработчик <span>Freelance</span></h3>
                 <p class="work__period"> Февраль 2022 - нынешнее время   <span>|</span>   Харьков. Украина.</p>
-                <ul class="work__list">
+                <ul class="work__list list">
                     <li class="work__item">Вёрстка сайта по макету онлайн-редактора Figma.</li>
                     <li class="work__item">Смешаная верстка сайтов (адаптивная + респонсивная) под все стандартные девайсы.</li>
                     <li class="work__item">Работа по методологии BEM.</li> 
@@ -308,7 +313,7 @@
                 <div  class="work-company">
                     <h3 class="work__position"> Автослесарь-автомеханик  <span>СТО "VS Avto"</span></h3>
                     <p class="work__period"> Август 2021 - нынешнее время   <span>|</span>   Харьков. Украина. </p>
-                    <ul class="work__list">
+                    <ul class="work__list list">
                         <li class="work__item"> Автослесарь по ремонту и обслуживанию ходовой части автомобиля, ДВС.  </li>
                         <li class="work__item"> Автослесарь по ремонту и обслуживанию электрообрудования автомобилей.</li>
                         <li class="work__item"> Автослесарь по обслуживанию и ремонту систем кондиционирования.</li>
@@ -318,7 +323,7 @@
                 <div class="work-company">
                     <h3 class="work__position"> Автослесарь-автомеханик  <span>СТО "Vin Car Import"</span> </h3>
                     <p class="work__period"> Март 2020 - Декабрь 2020   <span>|</span>   Харьков. Украина. </p>
-                    <ul class="work__list">
+                    <ul class="work__list list">
                         <li class="work__item"> Автослесарь по ремонту и обслуживанию ходовой части автомобиля, ДВС.  </li>
                         <li class="work__item"> Автослесарь по ремонту и обслуживанию электрообрудования автомобилей.</li>
                         <li class="work__item"> Автослесарь по обслуживанию и ремонту систем кондиционирования.</li>
@@ -329,7 +334,7 @@
                 <div  class="work-company">
                     <h3 class="work__position"> Автослесарь-автомеханик  <span>СТО "Level Motors"</span></h3>
                     <p class="work__period"> Август 2018 - март 2020   <span>|</span>   Харьков. Украина. </p>
-                    <ul class="work__list">
+                    <ul class="work__list list">
                         <li class="work__item"> Автослесарь по ремонту и обслуживанию ходовой части автомобиля, ДВС.  </li>
                         <li class="work__item"> Автослесарь по ремонту и обслуживанию электрообрудования автомобилей.</li>
                         <li class="work__item"> Автослесарь по обслуживанию и ремонту систем кондиционирования.</li>
@@ -339,7 +344,7 @@
                 <div class="work-company">
                     <h3 class="work__position">Водитель-экспедитор, менеджер, кладовщик. <span>ЧФ"Спецзаказ"</span></h3>
                     <p class="work__period"> Июнь 2008 - Август 2018   <span>|</span>   Харьков. Украина. </p>
-                    <ul class="work__list">
+                    <ul class="work__list list">
                         <li class="work__item"> Водитель-экспедитор. Доставка и соровождение грузов, ведение сопроводительной документации.  </li>
                         <li class="work__item"> Менеджер по продажам товаров и услуг фирмы. </li>
                         <li class="work__item"> Менеджер по закумпкам промышленной группы товаров </li>
@@ -351,7 +356,7 @@
                 <div class="work-company">
                     <h3 class="work__position"> Водитель-экспедитор.  <span>Харьковская Макаронная Фабрика</span></h3>
                     <p class="work__period"> Июнь 2006 - сентябрь 2006   <span>|</span>   Харьков. Украина.  </p>
-                    <ul class="work__list">
+                    <ul class="work__list list">
                         <li class="work__item">Водитель-экспедитор. Доставка и соровождение грузов, ведение сопроводительной документации. </li>
                     </ul>
                 </div>
@@ -419,6 +424,6 @@
     </div>
     <p class="copyright">Copyright © 2022. Created by Alexandr Pavlenko.</p>
 </footer>
-<script src="./js/menu-mobile.js"></script>
+<script src="./js/scripts.js"></script>
 </body>
 </html>

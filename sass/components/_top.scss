@@ -1,0 +1,32 @@
+.top-btn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 5;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    fill: #2195f377;
+    transition-property: fill;
+    transition: var(--main-transition);
+    &:hover {
+        fill: var(--hover-color);
+    }
+}
+
+.top__svg{
+    width: 40px;
+    height: 40px;
+    @include tablet {
+        width: 45px;
+        height: 45px;
+    }
+//     @include desktop {
+//         width: 50px;
+//         height: 50px;
+//     }
+}

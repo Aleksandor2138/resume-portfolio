@@ -5,6 +5,10 @@
         padding: 0;
         height:400px;
     }
+    @include tablet {
+        grid-area: 1 / 1 / 2 / 3; 
+        padding: 0;
+    }
     @include desktop {
         .container{
             max-width: 1600px;

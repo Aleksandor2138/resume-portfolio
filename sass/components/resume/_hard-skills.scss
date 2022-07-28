@@ -1,12 +1,15 @@
 .hard-skills {
     padding: 60px 0;
+    @include tablet {
+        grid-area: 3 / 1 / 4 / 2;
+        width: 100%;
+    }
     .container {
         display: flex;
         flex-direction: column;
         align-items: center;
         @include tablet {
             align-items: unset;
-            padding: 0 16px;
         }
     }
     &-header {
@@ -20,19 +23,8 @@
             margin-bottom: 50px;
         }
     }
-    &-all{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        // align-content: stretch;
-        @include tablet {
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: space-around;
-        }
-    }
 	&__list {
-        margin-bottom: 10px;
+        margin: 0 40px 10px 20px;
     }
     &__item {
         display: flex;

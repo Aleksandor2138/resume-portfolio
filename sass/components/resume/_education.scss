@@ -2,6 +2,11 @@
     padding: 60px 0;
     background: var(--section-color-white-grey);
     margin: 0 auto;
+    @include tablet {
+        grid-area:4 / 2 / 5 / 3;
+        width: 100%;
+        background: var(--section-color-white);
+    }
     .container {
         margin: 0 auto;
     }
@@ -14,16 +19,11 @@
             margin-bottom: 50px;
         }
     }
-    &-list {
-        display: flex;
-        flex-direction: column;
-        @include desktop {
-            flex-direction: row;
-            justify-content: space-between;
+    &__item {
+        @include tablet {
+            margin: 0 20px 0 20px;
         }
     }
-    // &__item {
-    // }
     &__university {
         @include text-style($fs:16px, $col:var(--hover-color));
         margin-bottom: 10px;

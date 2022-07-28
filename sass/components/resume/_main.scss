@@ -1,0 +1,10 @@
+.main {
+    @include tablet {
+        max-width: 1280px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+}

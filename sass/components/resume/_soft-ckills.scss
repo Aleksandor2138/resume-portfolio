@@ -1,6 +1,10 @@
 .soft-ckills {
     background: var(--section-color-white-grey);
     padding: 60px 0;
+    @include tablet {
+        grid-area: 3 / 2 / 4 / 3;
+        width: 100%;
+    }
     .container {
         display: flex;
         flex-direction: column;
@@ -19,18 +23,9 @@
             margin-bottom: 50px;
         }
     }
-    &__bottom {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        @include tablet {
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: space-around;
-        }
+    &__list {
+        margin: 0 20px 0 20px;
     }
-    // &__list {
-    // }
     &__item {
         @include text-style($fs:12px, $col: var(--text-color-grey));
         &:before{
